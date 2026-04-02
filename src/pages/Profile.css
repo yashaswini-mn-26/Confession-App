@@ -1,0 +1,80 @@
+/* src/pages/Profile.css */
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 1rem 0 0.75rem;
+}
+
+.profile-avatar {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: var(--rose-pale);
+  border: 2px solid var(--petal-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  flex-shrink: 0;
+  transition: transform 0.2s;
+}
+
+.profile-avatar:hover { transform: scale(1.04); }
+
+.profile-info h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-1);
+  margin-bottom: 3px;
+}
+
+.profile-info p {
+  font-size: 0.82rem;
+  color: var(--text-3);
+  line-height: 1.5;
+}
+
+.profile-stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 0.75rem 0;
+  padding: 0.9rem 0;
+  border-top: 1px solid var(--divider);
+  border-bottom: 1px solid var(--divider);
+  text-align: center;
+}
+
+.profile-stats div h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--rose);
+  line-height: 1.2;
+}
+
+.profile-stats div span {
+  font-size: 0.75rem;
+  color: var(--text-3);
+  font-weight: 500;
+}
+
+/* Edit profile link button */
+.edit-btn {
+  display: block;
+  text-align: center;
+  padding: 9px 16px;
+  border-radius: 10px;
+  border: 1.5px solid var(--rose);
+  color: var(--rose);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+  transition: background 0.18s, color 0.18s;
+}
+
+.edit-btn:hover {
+  background: var(--rose);
+  color: #fff;
+}

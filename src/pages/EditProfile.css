@@ -1,0 +1,77 @@
+/* src/pages/EditProfile.css */
+
+.input {
+  display: block;
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px 14px;
+  border-radius: var(--r-md);
+  border: 1px solid var(--divider);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--text-1);
+  background: var(--surface);
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input:focus {
+  border-color: var(--rose-mid);
+  box-shadow: var(--shadow-input);
+}
+
+.input::placeholder { color: var(--text-placeholder); }
+
+.save-btn {
+  display: block;
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 12px;
+  border-radius: 100px;
+  background: var(--rose);
+  color: white;
+  border: none;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
+  box-shadow: 0 2px 12px rgba(212,116,138,0.3);
+}
+
+.save-btn:hover:not(:disabled) {
+  background: #c8677d;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 18px rgba(212,116,138,0.4);
+}
+
+.save-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Avatar selector */
+.avatar-select {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 0.75rem 0;
+}
+
+.avatar-select span {
+  font-size: 1.6rem;
+  cursor: pointer;
+  padding: 7px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: border-color 0.18s, background 0.18s, transform 0.15s;
+  line-height: 1;
+}
+
+.avatar-select span:hover { transform: scale(1.1); }
+
+.avatar-select span.active {
+  background: var(--rose-light);
+  border-color: var(--rose);
+}

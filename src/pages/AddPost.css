@@ -1,0 +1,35 @@
+/* src/pages/AddPost.css */
+
+.compose-ta.big {
+  width: 100%;
+  min-height: 130px;
+  font-size: 1rem;
+  font-family: var(--font-body);
+  padding: 14px;
+  border-radius: var(--r-md);
+  border: 1px solid var(--divider);
+  background: var(--surface);
+  color: var(--text-1);
+  resize: vertical;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  caret-color: var(--rose);
+  line-height: 1.6;
+}
+
+.compose-ta.big:focus {
+  border-color: var(--rose-mid);
+  box-shadow: var(--shadow-input);
+}
+
+.compose-ta.big::placeholder {
+  color: var(--text-placeholder);
+}
+
+.char-count {
+  text-align: right;
+  font-size: 0.75rem;
+  margin-top: 6px;
+  font-weight: 600;
+  color: var(--text-3);
+}
